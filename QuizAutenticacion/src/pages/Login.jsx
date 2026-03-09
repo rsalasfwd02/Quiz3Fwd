@@ -59,7 +59,7 @@ function Login({ onLogin }) {
             }
         } catch (err) {
             console.error("Login error:", err);
-            setError("No se pudo conectar con el servidor. Verifica que el backend esté encendido.");
+            setError("No se pudo conectar con el servidor.");
         } finally {
             setIsLoading(false);
         }

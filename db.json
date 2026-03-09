@@ -13,21 +13,9 @@
       "email": "rsalaspost@gmail.com",
       "password": "1234",
       "role": "cliente"
-    },
-    {
-      "id": "2f7a",
-      "name": "Ronny Salas Fernandez",
-      "email": "rsalas00@gmail.com",
-      "password": "12345",
-      "role": "cliente"
     }
   ],
   "products": [
-    {
-      "id": "1",
-      "name": "arroz",
-      "price": 2000
-    },
     {
       "id": "2",
       "name": "aceite",

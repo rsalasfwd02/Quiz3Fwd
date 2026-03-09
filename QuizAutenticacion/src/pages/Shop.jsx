@@ -6,7 +6,7 @@ function Shop() {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState("");
     const [cart, setCart] = useState([]);
-    const [notification, setNotification] = useState("");
+    const [notification, setNotification] = useState({ text: "", color: "#0288d1" });
     const [showCart, setShowCart] = useState(false);
 
     useEffect(() => {
@@ -33,8 +33,8 @@ function Shop() {
             }
             return [...prev, { ...product, qty: 1 }];
         });
-        setNotification(`"${product.name}" agregado al carrito`);
-        setTimeout(() => setNotification(""), 2000);
+        setNotification({ text: `"${product.name}" agregado al carrito`, color: "#0288d1" });
+        setTimeout(() => setNotification({ text: "", color: "" }), 2000);
     };
 
     const decreaseQty = (id) => {
@@ -53,6 +53,14 @@ function Shop() {
         setCart([]);
     };
 
+    const handleCheckout = () => {
+        const total = totalPrice.toLocaleString();
+        setShowCart(false);
+        clearCart();
+        setNotification({ text: `✅ ¡Compra realizada! Total pagado: ₡${total}`, color: "#2e7d32" });
+        setTimeout(() => setNotification({ text: "", color: "" }), 4000);
+    };
+
     const totalItems = cart.reduce((sum, i) => sum + i.qty, 0);
     const totalPrice = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
 
@@ -66,16 +74,16 @@ function Shop() {
             </p>
 
             {/* Toast notification */}
-            {notification && (
+            {notification.text && (
                 <div style={{
                     position: "fixed", top: "80px", right: "1.5rem",
-                    backgroundColor: "#0288d1", color: "white",
-                    padding: "0.8rem 1.4rem", borderRadius: "8px",
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-                    zIndex: 3000, fontSize: "0.95rem", fontWeight: "500",
-                    animation: "fadeIn 0.2s ease"
+                    backgroundColor: notification.color, color: "white",
+                    padding: "0.9rem 1.5rem", borderRadius: "10px",
+                    boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+                    zIndex: 3000, fontSize: "0.95rem", fontWeight: "600",
+                    maxWidth: "280px", lineHeight: "1.4"
                 }}>
-                    ✓ {notification}
+                    {notification.text}
                 </div>
             )}
 
@@ -240,6 +248,7 @@ function Shop() {
                                     🗑️ Vaciar carrito
                                 </button>
                                 <button
+                                    onClick={handleCheckout}
                                     style={{
                                         width: "100%", padding: "0.9rem",
                                         backgroundColor: "#0288d1", color: "white",

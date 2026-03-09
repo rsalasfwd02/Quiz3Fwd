@@ -3,9 +3,19 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <div style={{ textAlign: "center", padding: "2rem" }}>
-            <header style={{ backgroundColor: "#331f7bff", color: "white", padding: "3rem", borderRadius: "8px" }}>
-                <h1>Supermercado FWD</h1>
-                <p>Calidad y frescura al mejor precio</p>
+            <header style={{
+                backgroundColor: "rgba(2, 136, 209, 0.85)",
+                backdropFilter: "blur(4px)",
+                color: "white",
+                padding: "4rem 3rem",
+                borderRadius: "12px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center"
+            }}>
+                <h1 style={{ margin: 0, fontSize: "2.8rem", textShadow: "0 2px 8px rgba(0,0,0,0.3)" }}>Supermercado FWD</h1>
+                <p style={{ marginTop: "0.8rem", fontSize: "1.2rem" }}>Calidad y frescura al mejor precio</p>
             </header>
 
             <section style={{ marginTop: "2rem" }}>
