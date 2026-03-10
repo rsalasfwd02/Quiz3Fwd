@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function Navbar({ user, onLogout }) {
+function Navbar({ user, onLogout }: { user: any, onLogout: () => void }) {
     const [hoveredLink, setHoveredLink] = useState(null);
 
     const navStyle = {
@@ -12,8 +12,8 @@ function Navbar({ user, onLogout }) {
         backgroundColor: "#0288d1",
         boxShadow: "0 2px 10px rgba(0,0,0,0.15)",
         width: "100%",
-        boxSizing: "border-box",
-        position: "sticky",
+        boxSizing: "border-box" as const,
+        position: "sticky" as const,
         top: 0,
         zIndex: 1000,
         color: "white"

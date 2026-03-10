@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Login({ onLogin }) {
+function Login({ onLogin }: { onLogin: (userData: any) => void }) {
     const [isLogin, setIsLogin] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState("");
@@ -117,7 +117,7 @@ function Login({ onLogin }) {
         border: "1px solid #ccc",
         fontSize: "1rem",
         width: "100%",
-        boxSizing: "border-box",
+        boxSizing: "border-box" as const,
         color: "#333",
         backgroundColor: "white"
     };

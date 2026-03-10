@@ -23,7 +23,7 @@ const inputStyle = {
     color: C.text,
     fontSize: "0.95rem",
     width: "100%",
-    boxSizing: "border-box",
+    boxSizing: "border-box" as const,
     outline: "none",
     transition: "border-color 0.2s",
 };

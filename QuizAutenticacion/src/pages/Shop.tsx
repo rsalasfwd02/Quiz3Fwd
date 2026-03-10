@@ -25,7 +25,7 @@ function Shop() {
         }
     };
 
-    const addToCart = (product) => {
+    const addToCart = (product: any) => {
         setCart(prev => {
             const existing = prev.find(item => item.id === product.id);
             if (existing) {
@@ -37,7 +37,7 @@ function Shop() {
         setTimeout(() => setNotification({ text: "", color: "" }), 2000);
     };
 
-    const decreaseQty = (id) => {
+    const decreaseQty = (id: any) => {
         setCart(prev => {
             const item = prev.find(i => i.id === id);
             if (item.qty === 1) return prev.filter(i => i.id !== id);
@@ -45,7 +45,7 @@ function Shop() {
         });
     };
 
-    const removeFromCart = (id) => {
+    const removeFromCart = (id: any) => {
         setCart(prev => prev.filter(i => i.id !== id));
     };
 
@@ -61,8 +61,8 @@ function Shop() {
         setTimeout(() => setNotification({ text: "", color: "" }), 4000);
     };
 
-    const totalItems = cart.reduce((sum, i) => sum + i.qty, 0);
-    const totalPrice = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
+    const totalItems = cart.reduce((sum: any, i: any) => sum + i.qty, 0);
+    const totalPrice = cart.reduce((sum: any, i: any) => sum + i.price * i.qty, 0);
 
     return (
         <div style={{ padding: "2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>

@@ -4,7 +4,7 @@ const api = {
     /**
      * Fetch products or other resources (GET)
      */
-    async get(endpoint) {
+    async get(endpoint: string) {
         try {
             const response = await fetch(`${BASE_URL}/${endpoint}`);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -18,7 +18,7 @@ const api = {
     /**
      * Create a new resource (POST)
      */
-    async post(endpoint, data) {
+    async post(endpoint: string, data: any) {
         try {
             const response = await fetch(`${BASE_URL}/${endpoint}`, {
                 method: "POST",
@@ -36,7 +36,7 @@ const api = {
     /**
      * Update a resource partially (PATCH)
      */
-    async patch(endpoint, id, data) {
+    async patch(endpoint: string, id: string | number, data: any) {
         try {
             const response = await fetch(`${BASE_URL}/${endpoint}/${id}`, {
                 method: "PATCH",
@@ -54,7 +54,7 @@ const api = {
     /**
      * Update a resource completely (PUT)
      */
-    async put(endpoint, id, data) {
+    async put(endpoint: string, id: string | number, data: any) {
         try {
             const response = await fetch(`${BASE_URL}/${endpoint}/${id}`, {
                 method: "PUT",
@@ -72,7 +72,7 @@ const api = {
     /**
      * Delete a resource (DELETE)
      */
-    async delete(endpoint, id) {
+    async delete(endpoint: string, id: string | number) {
         try {
             const response = await fetch(`${BASE_URL}/${endpoint}/${id}`, {
                 method: "DELETE"

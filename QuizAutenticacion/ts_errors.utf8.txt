@@ -1,0 +1,42 @@
+﻿src/components/Navbar.tsx(63,14): error TS2322: Type '{ display: string; justifyContent: string; alignItems: string; padding: string; backgroundColor: string; boxShadow: string; width: string; boxSizing: string; position: string; top: number; zIndex: number; color: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/AdminDashboard.tsx(251,37): error TS2322: Type '{ padding: string; borderRadius: string; border: string; backgroundColor: string; color: string; fontSize: string; width: string; boxSizing: string; outline: string; transition: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/AdminDashboard.tsx(265,37): error TS2322: Type '{ padding: string; borderRadius: string; border: string; backgroundColor: string; color: string; fontSize: string; width: string; boxSizing: string; outline: string; transition: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/AdminDashboard.tsx(425,37): error TS2322: Type '{ padding: string; borderRadius: string; border: string; backgroundColor: string; color: string; fontSize: string; width: string; boxSizing: string; outline: string; transition: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/AdminDashboard.tsx(441,37): error TS2322: Type '{ padding: string; borderRadius: string; border: string; backgroundColor: string; color: string; fontSize: string; width: string; boxSizing: string; outline: string; transition: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/AdminDashboard.tsx(459,37): error TS2322: Type '{ padding: string; borderRadius: string; border: string; backgroundColor: string; color: string; fontSize: string; width: string; boxSizing: string; outline: string; transition: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/AdminDashboard.tsx(472,37): error TS2322: Type '{ padding: string; borderRadius: string; border: string; backgroundColor: string; color: string; fontSize: string; width: string; boxSizing: string; outline: string; transition: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/Login.tsx(161,29): error TS2322: Type '{ padding: string; borderRadius: string; border: string; fontSize: string; width: string; boxSizing: string; color: string; backgroundColor: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/Login.tsx(174,29): error TS2322: Type '{ padding: string; borderRadius: string; border: string; fontSize: string; width: string; boxSizing: string; color: string; backgroundColor: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/Login.tsx(184,29): error TS2322: Type '{ backgroundColor: "white"; padding: string; borderRadius: string; border: string; fontSize: string; width: string; boxSizing: string; color: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/Login.tsx(205,29): error TS2322: Type '{ padding: string; borderRadius: string; border: string; fontSize: string; width: string; boxSizing: string; color: string; backgroundColor: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/Login.tsx(218,29): error TS2322: Type '{ padding: string; borderRadius: string; border: string; fontSize: string; width: string; boxSizing: string; color: string; backgroundColor: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/Login.tsx(231,29): error TS2322: Type '{ padding: string; borderRadius: string; border: string; fontSize: string; width: string; boxSizing: string; color: string; backgroundColor: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
+src/pages/Login.tsx(241,29): error TS2322: Type '{ backgroundColor: "white"; padding: string; borderRadius: string; border: string; fontSize: string; width: string; boxSizing: string; color: string; }' is not assignable to type 'CSSProperties'.
+  Types of property 'boxSizing' are incompatible.
+    Type 'string' is not assignable to type 'BoxSizing'.
